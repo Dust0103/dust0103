@@ -399,7 +399,7 @@ void CreateFood()
         {
             int Flag = 1;
             srand((unsigned int)time(NULL));
-            food.x = rand() % (65 - 4) + 2;
+            food.x = (rand() % (32 - 2) + 1) * 2;
             food.y = rand() % (27 - 2) + 1;
 
             for (int i = 0; i < Snake.length; i++) //食物不能生成在蛇的身体上
